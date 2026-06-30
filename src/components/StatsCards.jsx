@@ -12,26 +12,26 @@ function StatsCards({ attendance }) {
   const uniqueUsers = new Set(attendance.map((a) => a.name)).size;
 
   return (
-    <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
+    <div className="stats">
 
-      <div className="card" style={{ flex: 1 }}>
-        <h3>Total Records</h3>
-        <p>{total}</p>
+      <div className="card">
+        <h3>Total</h3>
+        <h2>{total}</h2>
       </div>
 
-      <div className="card" style={{ flex: 1 }}>
+      <div className="card">
         <h3>Check Ins</h3>
-        <p>{checkIns}</p>
+        <h2>{checkIns}</h2>
       </div>
 
-      <div className="card" style={{ flex: 1 }}>
+      <div className="card">
         <h3>Check Outs</h3>
-        <p>{checkOuts}</p>
+        <h2>{checkOuts}</h2>
       </div>
 
-      <div className="card" style={{ flex: 1 }}>
-        <h3>Active Users</h3>
-        <p>{uniqueUsers}</p>
+      <div className="card">
+        <h3>Users</h3>
+        <h2>{uniqueUsers}</h2>
       </div>
 
     </div>

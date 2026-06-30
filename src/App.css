@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: "Segoe UI", sans-serif;
   background: #0f172a;
   color: white;
 }
 
 /* LOGIN */
-
 .login-wrapper {
   height: 100vh;
   display: flex;
@@ -18,76 +17,65 @@ body {
   background: white;
   color: black;
   padding: 30px;
-  border-radius: 12px;
-  width: 300px;
+  border-radius: 16px;
+  width: 320px;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .login-card input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .login-card button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background: #2563eb;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-}
-
-.error {
-  color: red;
   margin-top: 10px;
 }
 
 /* DASHBOARD */
-
 .dashboard {
   padding: 20px;
 }
 
-.topbar {
+/* HEADER */
+.header {
   background: #1e293b;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* STATS */
-
-.stats-grid {
+/* CARDS */
+.stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   margin-bottom: 20px;
 }
 
-.stat-card {
+.card {
   background: white;
   color: black;
-  border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
+  border-radius: 12px;
   text-align: center;
-}
-
-.stat-card h3 {
-  margin: 0;
-  color: #64748b;
-}
-
-.stat-card h1 {
-  margin-top: 10px;
-  color: #2563eb;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* BUTTONS */
-
 .buttons {
   display: flex;
   gap: 10px;
@@ -95,9 +83,9 @@ body {
 }
 
 button {
-  padding: 10px;
+  padding: 10px 14px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -116,30 +104,31 @@ button {
   color: white;
 }
 
-/* CARD */
-
-.card {
-  background: white;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-}
-
 /* TABLE */
-
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  background: white;
+  color: black;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.table th,
-.table td {
-  padding: 10px;
-  border-bottom: 1px solid #e5e7eb;
+.table th, .table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
   text-align: left;
 }
 
 .table th {
   background: #f1f5f9;
+}
+
+/* SEARCH + FILTER */
+.search, .date {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
